@@ -1,0 +1,67 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/start_screen.gd" type="Script" id=1]
+[ext_resource path="res://assets/intro/start.png" type="Texture" id=2]
+[ext_resource path="res://assets/intro/pacman_logo.svg" type="Texture" id=3]
+[ext_resource path="res://assets/intro/presentan.png" type="Texture" id=4]
+[ext_resource path="res://assets/intro/quit.png" type="Texture" id=5]
+[ext_resource path="res://assets/intro/deadgus.png" type="Texture" id=6]
+[ext_resource path="res://assets/music/amogus.mp3" type="AudioStream" id=7]
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -36.0
+margin_top = -29.0
+margin_right = 266.0
+margin_bottom = 342.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Deadgus" type="Sprite" parent="."]
+modulate = Color( 0.45098, 0.329412, 0.329412, 1 )
+position = Vector2( 112, 135 )
+scale = Vector2( 0.282027, 0.284746 )
+texture = ExtResource( 6 )
+
+[node name="start_btn" type="Button" parent="."]
+margin_left = 41.0
+margin_top = 218.0
+margin_right = 92.0
+margin_bottom = 238.0
+flat = true
+
+[node name="quit_btn" type="Button" parent="."]
+margin_left = 136.0
+margin_top = 218.0
+margin_right = 190.0
+margin_bottom = 238.0
+flat = true
+
+[node name="amogus" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="Start" type="Sprite" parent="."]
+position = Vector2( 67, 228 )
+scale = Vector2( 0.127632, 0.132979 )
+texture = ExtResource( 2 )
+
+[node name="Quit" type="Sprite" parent="."]
+position = Vector2( 163, 228 )
+scale = Vector2( 0.164407, 0.134409 )
+texture = ExtResource( 5 )
+
+[node name="Presentan" type="Sprite" parent="."]
+position = Vector2( 113, 49 )
+scale = Vector2( 0.118497, 0.129552 )
+texture = ExtResource( 4 )
+
+[node name="PacmanLogo" type="Sprite" parent="."]
+position = Vector2( 114, 149 )
+scale = Vector2( 0.0744, 0.0788 )
+texture = ExtResource( 3 )
+
+[connection signal="pressed" from="start_btn" to="." method="_on_start_btn_pressed"]
+[connection signal="pressed" from="quit_btn" to="." method="_on_quit_btn_pressed"]

@@ -1,0 +1,1985 @@
+[gd_scene load_steps=46 format=2]
+
+[ext_resource path="res://assets/Background_Tileset.png" type="Texture" id=1]
+[ext_resource path="res://scenes/maps/points_pills/Points.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/characters/pacman/portal.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/maps/Map1.gd" type="Script" id=4]
+[ext_resource path="res://scenes/maps/points_pills/Power_pill.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/music/ambient.mp3" type="AudioStream" id=6]
+[ext_resource path="res://assets/music/omaewa.mp3" type="AudioStream" id=7]
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=22]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=24]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=26]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=27]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=28]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=29]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=30]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=31]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=32]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=33]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="NavigationPolygon" id=42]
+vertices = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+outlines = [ PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=41]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=35]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=36]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=37]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=38]
+points = PoolVector2Array( 0, 0, 8, 0, 8, 8, 0, 8 )
+
+[sub_resource type="TileSet" id=1]
+0/name = "Background_Tileset.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 8, 8 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 3 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "Background_Tileset.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 8, 0, 8, 8 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 4 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "Background_Tileset.png 2"
+2/texture = ExtResource( 1 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 16, 0, 8, 8 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 15 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "Background_Tileset.png 3"
+3/texture = ExtResource( 1 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 24, 0, 8, 8 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 23 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 23 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "Background_Tileset.png 4"
+4/texture = ExtResource( 1 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 32, 0, 8, 8 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 33 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 33 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "Background_Tileset.png 5"
+5/texture = ExtResource( 1 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 40, 0, 8, 8 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 41 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 41 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "Background_Tileset.png 6"
+6/texture = ExtResource( 1 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 48, 0, 8, 8 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 35 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 35 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "Background_Tileset.png 7"
+7/texture = ExtResource( 1 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 56, 0, 8, 8 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 36 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 36 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0
+8/name = "Background_Tileset.png 8"
+8/texture = ExtResource( 1 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 8, 8, 8 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape = SubResource( 37 )
+8/shape_one_way = false
+8/shape_one_way_margin = 1.0
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 37 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+8/z_index = 0
+9/name = "Background_Tileset.png 9"
+9/texture = ExtResource( 1 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 8, 8, 8, 8 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape = SubResource( 38 )
+9/shape_one_way = false
+9/shape_one_way_margin = 1.0
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 38 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+9/z_index = 0
+10/name = "Background_Tileset.png 10"
+10/texture = ExtResource( 1 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 16, 8, 8, 8 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape = SubResource( 5 )
+10/shape_one_way = false
+10/shape_one_way_margin = 1.0
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+10/z_index = 0
+11/name = "Background_Tileset.png 11"
+11/texture = ExtResource( 1 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 24, 8, 8, 8 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape = SubResource( 6 )
+11/shape_one_way = false
+11/shape_one_way_margin = 1.0
+11/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+11/z_index = 0
+12/name = "Background_Tileset.png 12"
+12/texture = ExtResource( 1 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 32, 8, 8, 8 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape = SubResource( 7 )
+12/shape_one_way = false
+12/shape_one_way_margin = 1.0
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+12/z_index = 0
+13/name = "Background_Tileset.png 13"
+13/texture = ExtResource( 1 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 40, 8, 8, 8 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape = SubResource( 8 )
+13/shape_one_way = false
+13/shape_one_way_margin = 1.0
+13/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+13/z_index = 0
+14/name = "Background_Tileset.png 14"
+14/texture = ExtResource( 1 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 48, 8, 8, 8 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape = SubResource( 9 )
+14/shape_one_way = false
+14/shape_one_way_margin = 1.0
+14/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+14/z_index = 0
+15/name = "Background_Tileset.png 15"
+15/texture = ExtResource( 1 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 56, 8, 8, 8 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shape_offset = Vector2( 0, 0 )
+15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape = SubResource( 10 )
+15/shape_one_way = false
+15/shape_one_way_margin = 1.0
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+15/z_index = 0
+16/name = "Background_Tileset.png 16"
+16/texture = ExtResource( 1 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 0, 16, 8, 8 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 0, 0 )
+16/navigation_offset = Vector2( 0, 0 )
+16/shape_offset = Vector2( 0, 0 )
+16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+16/shape = SubResource( 11 )
+16/shape_one_way = false
+16/shape_one_way_margin = 1.0
+16/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+16/z_index = 0
+17/name = "Background_Tileset.png 17"
+17/texture = ExtResource( 1 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 8, 16, 8, 8 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 0, 0 )
+17/navigation_offset = Vector2( 0, 0 )
+17/shape_offset = Vector2( 0, 0 )
+17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+17/shape = SubResource( 12 )
+17/shape_one_way = false
+17/shape_one_way_margin = 1.0
+17/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+17/z_index = 0
+18/name = "Background_Tileset.png 18"
+18/texture = ExtResource( 1 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 16, 16, 8, 8 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 0, 0 )
+18/navigation_offset = Vector2( 0, 0 )
+18/shape_offset = Vector2( 0, 0 )
+18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+18/shape = SubResource( 13 )
+18/shape_one_way = false
+18/shape_one_way_margin = 1.0
+18/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+18/z_index = 0
+19/name = "Background_Tileset.png 19"
+19/texture = ExtResource( 1 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 24, 16, 8, 8 )
+19/tile_mode = 0
+19/occluder_offset = Vector2( 0, 0 )
+19/navigation_offset = Vector2( 0, 0 )
+19/shape_offset = Vector2( 0, 0 )
+19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+19/shape = SubResource( 14 )
+19/shape_one_way = false
+19/shape_one_way_margin = 1.0
+19/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+19/z_index = 0
+21/name = "Background_Tileset.png 21"
+21/texture = ExtResource( 1 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 32, 24, 8, 8 )
+21/tile_mode = 0
+21/occluder_offset = Vector2( 0, 0 )
+21/navigation_offset = Vector2( 0, 0 )
+21/shape_offset = Vector2( 0, 0 )
+21/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+21/shape = SubResource( 16 )
+21/shape_one_way = false
+21/shape_one_way_margin = 1.0
+21/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+21/z_index = 0
+23/name = "Background_Tileset.png 23"
+23/texture = ExtResource( 1 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 56, 16, 8, 8 )
+23/tile_mode = 0
+23/occluder_offset = Vector2( 0, 0 )
+23/navigation_offset = Vector2( 0, 0 )
+23/shape_offset = Vector2( 0, 0 )
+23/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+23/shape = SubResource( 17 )
+23/shape_one_way = false
+23/shape_one_way_margin = 1.0
+23/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 17 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+23/z_index = 0
+24/name = "Background_Tileset.png 24"
+24/texture = ExtResource( 1 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 0, 24, 8, 8 )
+24/tile_mode = 0
+24/occluder_offset = Vector2( 0, 0 )
+24/navigation_offset = Vector2( 0, 0 )
+24/shape_offset = Vector2( 0, 0 )
+24/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+24/shape = SubResource( 18 )
+24/shape_one_way = false
+24/shape_one_way_margin = 1.0
+24/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+24/z_index = 0
+25/name = "Background_Tileset.png 25"
+25/texture = ExtResource( 1 )
+25/tex_offset = Vector2( 0, 0 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( 8, 24, 8, 8 )
+25/tile_mode = 0
+25/occluder_offset = Vector2( 0, 0 )
+25/navigation_offset = Vector2( 0, 0 )
+25/shape_offset = Vector2( 0, 0 )
+25/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+25/shape = SubResource( 19 )
+25/shape_one_way = false
+25/shape_one_way_margin = 1.0
+25/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 19 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+25/z_index = 0
+26/name = "Background_Tileset.png 26"
+26/texture = ExtResource( 1 )
+26/tex_offset = Vector2( 0, 0 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 16, 24, 8, 8 )
+26/tile_mode = 0
+26/occluder_offset = Vector2( 0, 0 )
+26/navigation_offset = Vector2( 0, 0 )
+26/shape_offset = Vector2( 0, 0 )
+26/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+26/shape = SubResource( 20 )
+26/shape_one_way = false
+26/shape_one_way_margin = 1.0
+26/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 20 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+26/z_index = 0
+27/name = "Background_Tileset.png 27"
+27/texture = ExtResource( 1 )
+27/tex_offset = Vector2( 0, 0 )
+27/modulate = Color( 1, 1, 1, 1 )
+27/region = Rect2( 24, 24, 8, 8 )
+27/tile_mode = 0
+27/occluder_offset = Vector2( 0, 0 )
+27/navigation_offset = Vector2( 0, 0 )
+27/shape_offset = Vector2( 0, 0 )
+27/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+27/shape = SubResource( 21 )
+27/shape_one_way = false
+27/shape_one_way_margin = 1.0
+27/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 21 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+27/z_index = 0
+28/name = "Background_Tileset.png 28"
+28/texture = ExtResource( 1 )
+28/tex_offset = Vector2( 0, 0 )
+28/modulate = Color( 1, 1, 1, 1 )
+28/region = Rect2( 32, 16, 8, 8 )
+28/tile_mode = 0
+28/occluder_offset = Vector2( 0, 0 )
+28/navigation_offset = Vector2( 0, 0 )
+28/shape_offset = Vector2( 0, 0 )
+28/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+28/shape = SubResource( 22 )
+28/shape_one_way = false
+28/shape_one_way_margin = 1.0
+28/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 22 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+28/z_index = 0
+30/name = "Background_Tileset.png 30"
+30/texture = ExtResource( 1 )
+30/tex_offset = Vector2( 0, 0 )
+30/modulate = Color( 1, 1, 1, 1 )
+30/region = Rect2( 56, 24, 8, 8 )
+30/tile_mode = 0
+30/occluder_offset = Vector2( 0, 0 )
+30/navigation_offset = Vector2( 0, 0 )
+30/shape_offset = Vector2( 0, 0 )
+30/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+30/shape = SubResource( 24 )
+30/shape_one_way = false
+30/shape_one_way_margin = 1.0
+30/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 24 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+30/z_index = 0
+31/name = "Background_Tileset.png 31"
+31/texture = ExtResource( 1 )
+31/tex_offset = Vector2( 0, 0 )
+31/modulate = Color( 1, 1, 1, 1 )
+31/region = Rect2( 0, 32, 8, 8 )
+31/tile_mode = 0
+31/occluder_offset = Vector2( 0, 0 )
+31/navigation_offset = Vector2( 0, 0 )
+31/shape_offset = Vector2( 0, 0 )
+31/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+31/shape = SubResource( 25 )
+31/shape_one_way = false
+31/shape_one_way_margin = 1.0
+31/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 25 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+31/z_index = 0
+32/name = "Background_Tileset.png 32"
+32/texture = ExtResource( 1 )
+32/tex_offset = Vector2( 0, 0 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 8, 32, 8, 8 )
+32/tile_mode = 0
+32/occluder_offset = Vector2( 0, 0 )
+32/navigation_offset = Vector2( 0, 0 )
+32/shape_offset = Vector2( 0, 0 )
+32/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+32/shape = SubResource( 26 )
+32/shape_one_way = false
+32/shape_one_way_margin = 1.0
+32/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 26 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+32/z_index = 0
+33/name = "Background_Tileset.png 33"
+33/texture = ExtResource( 1 )
+33/tex_offset = Vector2( 0, 0 )
+33/modulate = Color( 1, 1, 1, 1 )
+33/region = Rect2( 16, 32, 8, 8 )
+33/tile_mode = 0
+33/occluder_offset = Vector2( 0, 0 )
+33/navigation_offset = Vector2( 0, 0 )
+33/shape_offset = Vector2( 0, 0 )
+33/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+33/shape = SubResource( 27 )
+33/shape_one_way = false
+33/shape_one_way_margin = 1.0
+33/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 27 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+33/z_index = 0
+34/name = "Background_Tileset.png 34"
+34/texture = ExtResource( 1 )
+34/tex_offset = Vector2( 0, 0 )
+34/modulate = Color( 1, 1, 1, 1 )
+34/region = Rect2( 24, 32, 8, 8 )
+34/tile_mode = 0
+34/occluder_offset = Vector2( 0, 0 )
+34/navigation_offset = Vector2( 0, 0 )
+34/shape_offset = Vector2( 0, 0 )
+34/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+34/shape = SubResource( 28 )
+34/shape_one_way = false
+34/shape_one_way_margin = 1.0
+34/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 28 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+34/z_index = 0
+35/name = "Background_Tileset.png 35"
+35/texture = ExtResource( 1 )
+35/tex_offset = Vector2( 0, 0 )
+35/modulate = Color( 1, 1, 1, 1 )
+35/region = Rect2( 40, 32, 8, 8 )
+35/tile_mode = 0
+35/occluder_offset = Vector2( 0, 0 )
+35/navigation_offset = Vector2( 0, 0 )
+35/shape_offset = Vector2( 0, 0 )
+35/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+35/shape = SubResource( 29 )
+35/shape_one_way = false
+35/shape_one_way_margin = 1.0
+35/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 29 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+35/z_index = 0
+36/name = "Background_Tileset.png 36"
+36/texture = ExtResource( 1 )
+36/tex_offset = Vector2( 0, 0 )
+36/modulate = Color( 1, 1, 1, 1 )
+36/region = Rect2( 32, 32, 8, 8 )
+36/tile_mode = 0
+36/occluder_offset = Vector2( 0, 0 )
+36/navigation_offset = Vector2( 0, 0 )
+36/shape_offset = Vector2( 0, 0 )
+36/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+36/shape = SubResource( 30 )
+36/shape_one_way = false
+36/shape_one_way_margin = 1.0
+36/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 30 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+36/z_index = 0
+37/name = "Background_Tileset.png 37"
+37/texture = ExtResource( 1 )
+37/tex_offset = Vector2( 0, 0 )
+37/modulate = Color( 1, 1, 1, 1 )
+37/region = Rect2( 48, 32, 8, 8 )
+37/tile_mode = 0
+37/occluder_offset = Vector2( 0, 0 )
+37/navigation_offset = Vector2( 0, 0 )
+37/shape_offset = Vector2( 0, 0 )
+37/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+37/shape = SubResource( 31 )
+37/shape_one_way = false
+37/shape_one_way_margin = 1.0
+37/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 31 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+37/z_index = 0
+38/name = "Background_Tileset.png 38"
+38/texture = ExtResource( 1 )
+38/tex_offset = Vector2( 0, 0 )
+38/modulate = Color( 1, 1, 1, 1 )
+38/region = Rect2( 56, 32, 8, 8 )
+38/tile_mode = 0
+38/occluder_offset = Vector2( 0, 0 )
+38/navigation_offset = Vector2( 0, 0 )
+38/shape_offset = Vector2( 0, 0 )
+38/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+38/shape = SubResource( 32 )
+38/shape_one_way = false
+38/shape_one_way_margin = 1.0
+38/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 32 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+38/z_index = 0
+39/name = "Background_Tileset.png 39"
+39/texture = ExtResource( 1 )
+39/tex_offset = Vector2( 0, 0 )
+39/modulate = Color( 1, 1, 1, 1 )
+39/region = Rect2( 48, 16, 8, 8 )
+39/tile_mode = 0
+39/occluder_offset = Vector2( 0, 0 )
+39/navigation_offset = Vector2( 0, 0 )
+39/shape_offset = Vector2( 0, 0 )
+39/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+39/shape_one_way = false
+39/shape_one_way_margin = 0.0
+39/shapes = [  ]
+39/z_index = 0
+40/name = "Background_Tileset.png 40"
+40/texture = ExtResource( 1 )
+40/tex_offset = Vector2( 0, 0 )
+40/modulate = Color( 1, 1, 1, 1 )
+40/region = Rect2( 48, 24, 8, 8 )
+40/tile_mode = 0
+40/occluder_offset = Vector2( 0, 0 )
+40/navigation_offset = Vector2( 0, 0 )
+40/navigation = SubResource( 42 )
+40/shape_offset = Vector2( 0, 0 )
+40/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+40/shape_one_way = false
+40/shape_one_way_margin = 0.0
+40/shapes = [  ]
+40/z_index = 0
+
+[node name="Map1" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+
+[node name="Floor" type="TileMap" parent="Navigation2D"]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 8, 8 )
+show_collision = true
+bake_navigation = true
+format = 1
+tile_data = PoolIntArray( 262144, -1073741823, 0, 262145, -1073741822, 0, 262146, -1073741822, 0, 262147, -1073741822, 0, 262148, -1073741822, 0, 262149, -1073741822, 0, 262150, -1073741822, 0, 262151, -1073741822, 0, 262152, -1073741822, 0, 262153, -1073741822, 0, 262154, -1073741822, 0, 262155, -1073741822, 0, 262156, -1073741822, 0, 262157, -1073741803, 0, 262158, -1073741796, 0, 262159, -1073741822, 0, 262160, -1073741822, 0, 262161, -1073741822, 0, 262162, -1073741822, 0, 262163, -1073741822, 0, 262164, -1073741822, 0, 262165, -1073741822, 0, 262166, -1073741822, 0, 262167, -1073741822, 0, 262168, -1073741822, 0, 262169, -1073741822, 0, 262170, -1073741822, 0, 262171, -1073741815, 0, 327680, -1073741814, 0, 327681, 40, 0, 327682, 40, 0, 327683, 40, 0, 327684, 40, 0, 327685, 40, 0, 327686, 40, 0, 327687, 40, 0, 327688, 40, 0, 327689, 40, 0, 327690, 40, 0, 327691, 40, 0, 327692, 40, 0, 327693, -1073741792, 0, 327694, -1073741807, 0, 327695, 40, 0, 327696, 40, 0, 327697, 40, 0, 327698, 40, 0, 327699, 40, 0, 327700, 40, 0, 327701, 40, 0, 327702, 40, 0, 327703, 40, 0, 327704, 40, 0, 327705, 40, 0, 327706, 40, 0, 327707, -1073741814, 0, 393216, -1073741814, 0, 393217, 40, 0, 393218, -1073741818, 0, 393219, -1073741800, 0, 393220, -1073741800, 0, 393221, -1073741810, 0, 393222, 40, 0, 393223, -1073741818, 0, 393224, -1073741800, 0, 393225, -1073741800, 0, 393226, -1073741800, 0, 393227, -1073741810, 0, 393228, 40, 0, 393229, -1073741792, 0, 393230, -1073741807, 0, 393231, 40, 0, 393232, -1073741818, 0, 393233, -1073741800, 0, 393234, -1073741800, 0, 393235, -1073741800, 0, 393236, -1073741810, 0, 393237, 40, 0, 393238, -1073741818, 0, 393239, -1073741800, 0, 393240, -1073741800, 0, 393241, -1073741810, 0, 393242, 40, 0, 393243, -1073741814, 0, 458752, -1073741814, 0, 458753, 40, 0, 458754, -1073741792, 0, 458757, -1073741807, 0, 458758, 40, 0, 458759, -1073741792, 0, 458763, -1073741807, 0, 458764, 40, 0, 458765, -1073741792, 0, 458766, -1073741807, 0, 458767, 40, 0, 458768, -1073741792, 0, 458772, -1073741807, 0, 458773, 40, 0, 458774, -1073741792, 0, 458777, -1073741807, 0, 458778, 40, 0, 458779, -1073741814, 0, 524288, -1073741814, 0, 524289, 40, 0, 524290, -1073741819, 0, 524291, -1073741798, 0, 524292, -1073741798, 0, 524293, -1073741811, 0, 524294, 40, 0, 524295, -1073741819, 0, 524296, -1073741798, 0, 524297, -1073741798, 0, 524298, -1073741798, 0, 524299, -1073741811, 0, 524300, 40, 0, 524301, -1073741819, 0, 524302, -1073741811, 0, 524303, 40, 0, 524304, -1073741819, 0, 524305, -1073741798, 0, 524306, -1073741798, 0, 524307, -1073741798, 0, 524308, -1073741811, 0, 524309, 40, 0, 524310, -1073741819, 0, 524311, -1073741798, 0, 524312, -1073741798, 0, 524313, -1073741811, 0, 524314, 40, 0, 524315, -1073741814, 0, 589824, -1073741814, 0, 589825, 40, 0, 589826, 40, 0, 589827, 40, 0, 589828, 40, 0, 589829, 40, 0, 589830, 40, 0, 589831, 40, 0, 589832, 40, 0, 589833, 40, 0, 589834, 40, 0, 589835, 40, 0, 589836, 40, 0, 589837, 40, 0, 589838, 40, 0, 589839, 40, 0, 589840, 40, 0, 589841, 40, 0, 589842, 40, 0, 589843, 40, 0, 589844, 40, 0, 589845, 40, 0, 589846, 40, 0, 589847, 40, 0, 589848, 40, 0, 589849, 40, 0, 589850, 40, 0, 589851, -1073741814, 0, 655360, -1073741814, 0, 655361, 40, 0, 655362, -1073741818, 0, 655363, -1073741800, 0, 655364, -1073741800, 0, 655365, -1073741810, 0, 655366, 40, 0, 655367, -1073741818, 0, 655368, -1073741810, 0, 655369, 40, 0, 655370, -1073741818, 0, 655371, -1073741800, 0, 655372, -1073741800, 0, 655373, -1073741800, 0, 655374, -1073741800, 0, 655375, -1073741800, 0, 655376, -1073741800, 0, 655377, -1073741810, 0, 655378, 40, 0, 655379, -1073741818, 0, 655380, -1073741810, 0, 655381, 40, 0, 655382, -1073741818, 0, 655383, -1073741800, 0, 655384, -1073741800, 0, 655385, -1073741810, 0, 655386, 40, 0, 655387, -1073741814, 0, 720896, -1073741814, 0, 720897, 40, 0, 720898, -1073741819, 0, 720899, -1073741798, 0, 720900, -1073741798, 0, 720901, -1073741811, 0, 720902, 40, 0, 720903, -1073741792, 0, 720904, -1073741807, 0, 720905, 40, 0, 720906, -1073741819, 0, 720907, -1073741798, 0, 720908, -1073741798, 0, 720909, -1073741791, 0, 720910, -1073741806, 0, 720911, -1073741798, 0, 720912, -1073741798, 0, 720913, -1073741811, 0, 720914, 40, 0, 720915, -1073741792, 0, 720916, -1073741807, 0, 720917, 40, 0, 720918, -1073741819, 0, 720919, -1073741798, 0, 720920, -1073741798, 0, 720921, -1073741811, 0, 720922, 40, 0, 720923, -1073741814, 0, 786432, -1073741814, 0, 786433, 40, 0, 786434, 40, 0, 786435, 40, 0, 786436, 40, 0, 786437, 40, 0, 786438, 40, 0, 786439, -1073741792, 0, 786440, -1073741807, 0, 786441, 40, 0, 786442, 40, 0, 786443, 40, 0, 786444, 40, 0, 786445, -1073741792, 0, 786446, -1073741807, 0, 786447, 40, 0, 786448, 40, 0, 786449, 40, 0, 786450, 40, 0, 786451, -1073741792, 0, 786452, -1073741807, 0, 786453, 40, 0, 786454, 40, 0, 786455, 40, 0, 786456, 40, 0, 786457, 40, 0, 786458, 40, 0, 786459, -1073741814, 0, 851968, -1073741824, 0, 851969, -1073741822, 0, 851970, -1073741822, 0, 851971, -1073741822, 0, 851972, -1073741822, 0, 851973, -1073741815, 0, 851974, 40, 0, 851975, -1073741792, 0, 851976, -1073741808, 0, 851977, -1073741800, 0, 851978, -1073741800, 0, 851979, -1073741810, 0, 851980, 40, 0, 851981, -1073741792, 0, 851982, -1073741807, 0, 851983, 40, 0, 851984, -1073741818, 0, 851985, -1073741800, 0, 851986, -1073741800, 0, 851987, -1073741793, 0, 851988, -1073741807, 0, 851989, 40, 0, 851990, -1073741823, 0, 851991, -1073741822, 0, 851992, -1073741822, 0, 851993, -1073741822, 0, 851994, -1073741822, 0, 851995, -1073741816, 0, 917509, -1073741814, 0, 917510, 40, 0, 917511, -1073741792, 0, 917512, -1073741806, 0, 917513, -1073741798, 0, 917514, -1073741798, 0, 917515, -1073741811, 0, 917516, 40, 0, 917517, -1073741819, 0, 917518, 14, 0, 917519, 40, 0, 917520, -1073741819, 0, 917521, -1073741798, 0, 917522, -1073741798, 0, 917523, -1073741791, 0, 917524, -1073741807, 0, 917525, 40, 0, 917526, -1073741814, 0, 983045, -1073741814, 0, 983046, 40, 0, 983047, -1073741792, 0, 983048, -1073741807, 0, 983049, 40, 0, 983050, 40, 0, 983051, 40, 0, 983052, 40, 0, 983053, 40, 0, 983054, 40, 0, 983055, 40, 0, 983056, 40, 0, 983057, 40, 0, 983058, 40, 0, 983059, -1073741792, 0, 983060, -1073741807, 0, 983061, 40, 0, 983062, -1073741814, 0, 1048581, -1073741814, 0, 1048582, 40, 0, 1048583, -1073741792, 0, 1048584, -1073741807, 0, 1048585, 40, 0, 1048586, -1073741823, 0, 1048587, -1073741817, 0, 1048588, 30, 0, 1048589, 40, 0, 1048590, 40, 0, 1048591, 30, 0, 1048592, -1073741809, 0, 1048593, -1073741815, 0, 1048594, 40, 0, 1048595, -1073741792, 0, 1048596, -1073741807, 0, 1048597, 40, 0, 1048598, -1073741814, 0, 1114112, -1073741822, 0, 1114113, -1073741822, 0, 1114114, -1073741822, 0, 1114115, -1073741822, 0, 1114116, -1073741822, 0, 1114117, -1073741816, 0, 1114118, 40, 0, 1114119, -1073741819, 0, 1114120, -1073741811, 0, 1114121, 40, 0, 1114122, -1073741814, 0, 1114123, 40, 0, 1114124, 40, 0, 1114125, 40, 0, 1114126, 40, 0, 1114127, 40, 0, 1114128, 40, 0, 1114129, -1073741814, 0, 1114130, 40, 0, 1114131, -1073741819, 0, 1114132, -1073741811, 0, 1114133, 40, 0, 1114134, -1073741824, 0, 1114135, -1073741822, 0, 1114136, -1073741822, 0, 1114137, -1073741822, 0, 1114138, -1073741822, 0, 1114139, -1073741822, 0, 1179648, 40, 0, 1179649, 40, 0, 1179650, 40, 0, 1179651, 40, 0, 1179652, 40, 0, 1179653, 40, 0, 1179654, 40, 0, 1179655, 40, 0, 1179656, 40, 0, 1179657, 40, 0, 1179658, -1073741814, 0, 1179659, 40, 0, 1179660, 40, 0, 1179661, 40, 0, 1179662, 40, 0, 1179663, 40, 0, 1179664, 40, 0, 1179665, -1073741814, 0, 1179666, 40, 0, 1179667, 40, 0, 1179668, 40, 0, 1179669, 40, 0, 1179670, 40, 0, 1179671, 40, 0, 1179672, 40, 0, 1179673, 40, 0, 1179674, 40, 0, 1179675, 40, 0, 1245184, -1073741822, 0, 1245185, -1073741822, 0, 1245186, -1073741822, 0, 1245187, -1073741822, 0, 1245188, -1073741822, 0, 1245189, -1073741815, 0, 1245190, 40, 0, 1245191, -1073741818, 0, 1245192, -1073741810, 0, 1245193, 40, 0, 1245194, -1073741814, 0, 1245195, 40, 0, 1245196, 40, 0, 1245197, 40, 0, 1245198, 40, 0, 1245199, 40, 0, 1245200, 40, 0, 1245201, -1073741814, 0, 1245202, 40, 0, 1245203, -1073741818, 0, 1245204, -1073741810, 0, 1245205, 40, 0, 1245206, -1073741823, 0, 1245207, -1073741822, 0, 1245208, -1073741822, 0, 1245209, -1073741822, 0, 1245210, -1073741822, 0, 1245211, -1073741822, 0, 1310725, -1073741814, 0, 1310726, 40, 0, 1310727, -1073741792, 0, 1310728, -1073741807, 0, 1310729, 40, 0, 1310730, -1073741824, 0, 1310731, -1073741822, 0, 1310732, -1073741822, 0, 1310733, -1073741822, 0, 1310734, -1073741822, 0, 1310735, -1073741822, 0, 1310736, -1073741822, 0, 1310737, -1073741816, 0, 1310738, 40, 0, 1310739, -1073741792, 0, 1310740, -1073741807, 0, 1310741, 40, 0, 1310742, -1073741814, 0, 1376261, -1073741814, 0, 1376262, 40, 0, 1376263, -1073741792, 0, 1376264, -1073741807, 0, 1376265, 40, 0, 1376266, 40, 0, 1376267, 40, 0, 1376268, 40, 0, 1376269, 40, 0, 1376270, 40, 0, 1376271, 40, 0, 1376272, 40, 0, 1376273, 40, 0, 1376274, 40, 0, 1376275, -1073741792, 0, 1376276, -1073741807, 0, 1376277, 40, 0, 1376278, -1073741814, 0, 1441797, -1073741814, 0, 1441798, 40, 0, 1441799, -1073741792, 0, 1441800, -1073741807, 0, 1441801, 40, 0, 1441802, -1073741818, 0, 1441803, -1073741800, 0, 1441804, -1073741800, 0, 1441805, -1073741800, 0, 1441806, -1073741800, 0, 1441807, -1073741800, 0, 1441808, -1073741800, 0, 1441809, -1073741810, 0, 1441810, 40, 0, 1441811, -1073741792, 0, 1441812, -1073741807, 0, 1441813, 40, 0, 1441814, -1073741814, 0, 1507328, -1073741823, 0, 1507329, -1073741822, 0, 1507330, -1073741822, 0, 1507331, -1073741822, 0, 1507332, -1073741822, 0, 1507333, -1073741816, 0, 1507334, 40, 0, 1507335, -1073741819, 0, 1507336, -1073741811, 0, 1507337, 40, 0, 1507338, -1073741819, 0, 1507339, -1073741798, 0, 1507340, -1073741798, 0, 1507341, -1073741791, 0, 1507342, -1073741806, 0, 1507343, -1073741798, 0, 1507344, -1073741798, 0, 1507345, -1073741811, 0, 1507346, 40, 0, 1507347, -1073741819, 0, 1507348, -1073741811, 0, 1507349, 40, 0, 1507350, -1073741824, 0, 1507351, -1073741822, 0, 1507352, -1073741822, 0, 1507353, -1073741822, 0, 1507354, -1073741822, 0, 1507355, -1073741815, 0, 1572864, -1073741814, 0, 1572865, 40, 0, 1572866, 40, 0, 1572867, 40, 0, 1572868, 40, 0, 1572869, 40, 0, 1572870, 40, 0, 1572871, 40, 0, 1572872, 40, 0, 1572873, 40, 0, 1572874, 40, 0, 1572875, 40, 0, 1572876, 40, 0, 1572877, -1073741792, 0, 1572878, -1073741807, 0, 1572879, 40, 0, 1572880, 40, 0, 1572881, 40, 0, 1572882, 40, 0, 1572883, 40, 0, 1572884, 40, 0, 1572885, 40, 0, 1572886, 40, 0, 1572887, 40, 0, 1572888, 40, 0, 1572889, 40, 0, 1572890, 40, 0, 1572891, -1073741814, 0, 1638400, -1073741814, 0, 1638401, 40, 0, 1638402, -1073741818, 0, 1638403, -1073741800, 0, 1638404, -1073741800, 0, 1638405, -1073741810, 0, 1638406, 40, 0, 1638407, -1073741818, 0, 1638408, -1073741800, 0, 1638409, -1073741800, 0, 1638410, -1073741800, 0, 1638411, -1073741810, 0, 1638412, 40, 0, 1638413, -1073741792, 0, 1638414, -1073741807, 0, 1638415, 40, 0, 1638416, -1073741818, 0, 1638417, -1073741800, 0, 1638418, -1073741800, 0, 1638419, -1073741800, 0, 1638420, -1073741810, 0, 1638421, 40, 0, 1638422, -1073741818, 0, 1638423, -1073741800, 0, 1638424, -1073741800, 0, 1638425, -1073741810, 0, 1638426, 40, 0, 1638427, -1073741814, 0, 1703936, -1073741814, 0, 1703937, 40, 0, 1703938, -1073741819, 0, 1703939, -1073741798, 0, 1703940, -1073741791, 0, 1703941, -1073741807, 0, 1703942, 40, 0, 1703943, -1073741819, 0, 1703944, -1073741798, 0, 1703945, -1073741798, 0, 1703946, -1073741798, 0, 1703947, -1073741811, 0, 1703948, 40, 0, 1703949, -1073741819, 0, 1703950, -1073741811, 0, 1703951, 40, 0, 1703952, -1073741819, 0, 1703953, -1073741798, 0, 1703954, -1073741798, 0, 1703955, -1073741798, 0, 1703956, -1073741811, 0, 1703957, 40, 0, 1703958, -1073741792, 0, 1703959, -1073741806, 0, 1703960, -1073741798, 0, 1703961, -1073741811, 0, 1703962, 40, 0, 1703963, -1073741814, 0, 1769472, -1073741814, 0, 1769473, 40, 0, 1769474, 40, 0, 1769475, 40, 0, 1769476, -1073741792, 0, 1769477, -1073741807, 0, 1769478, 40, 0, 1769479, 40, 0, 1769480, 40, 0, 1769481, 40, 0, 1769482, 40, 0, 1769483, 40, 0, 1769484, 40, 0, 1769485, 40, 0, 1769486, 40, 0, 1769487, 40, 0, 1769488, 40, 0, 1769489, 40, 0, 1769490, 40, 0, 1769491, 40, 0, 1769492, 40, 0, 1769493, 40, 0, 1769494, -1073741792, 0, 1769495, -1073741807, 0, 1769496, 40, 0, 1769497, 40, 0, 1769498, 40, 0, 1769499, -1073741814, 0, 1835008, -1073741820, 0, 1835009, -1073741800, 0, 1835010, -1073741810, 0, 1835011, 40, 0, 1835012, -1073741792, 0, 1835013, -1073741807, 0, 1835014, 40, 0, 1835015, -1073741818, 0, 1835016, -1073741810, 0, 1835017, 40, 0, 1835018, -1073741818, 0, 1835019, -1073741800, 0, 1835020, -1073741800, 0, 1835021, -1073741800, 0, 1835022, -1073741800, 0, 1835023, -1073741800, 0, 1835024, -1073741800, 0, 1835025, -1073741810, 0, 1835026, 40, 0, 1835027, -1073741818, 0, 1835028, -1073741810, 0, 1835029, 40, 0, 1835030, -1073741792, 0, 1835031, -1073741807, 0, 1835032, 40, 0, 1835033, -1073741818, 0, 1835034, -1073741800, 0, 1835035, -1073741812, 0, 1900544, -1073741821, 0, 1900545, -1073741798, 0, 1900546, -1073741811, 0, 1900547, 40, 0, 1900548, -1073741819, 0, 1900549, -1073741811, 0, 1900550, 40, 0, 1900551, -1073741792, 0, 1900552, -1073741807, 0, 1900553, 40, 0, 1900554, -1073741819, 0, 1900555, -1073741798, 0, 1900556, -1073741798, 0, 1900557, -1073741791, 0, 1900558, -1073741806, 0, 1900559, -1073741798, 0, 1900560, -1073741798, 0, 1900561, -1073741811, 0, 1900562, 40, 0, 1900563, -1073741792, 0, 1900564, -1073741807, 0, 1900565, 40, 0, 1900566, -1073741819, 0, 1900567, -1073741811, 0, 1900568, 40, 0, 1900569, -1073741819, 0, 1900570, -1073741798, 0, 1900571, -1073741813, 0, 1966080, -1073741814, 0, 1966081, 40, 0, 1966082, 40, 0, 1966083, 40, 0, 1966084, 40, 0, 1966085, 40, 0, 1966086, 40, 0, 1966087, -1073741792, 0, 1966088, -1073741807, 0, 1966089, 40, 0, 1966090, 40, 0, 1966091, 40, 0, 1966092, 40, 0, 1966093, -1073741792, 0, 1966094, -1073741807, 0, 1966095, 40, 0, 1966096, 40, 0, 1966097, 40, 0, 1966098, 40, 0, 1966099, -1073741792, 0, 1966100, -1073741807, 0, 1966101, 40, 0, 1966102, 40, 0, 1966103, 40, 0, 1966104, 40, 0, 1966105, 40, 0, 1966106, 40, 0, 1966107, -1073741814, 0, 2031616, -1073741814, 0, 2031617, 40, 0, 2031618, -1073741818, 0, 2031619, -1073741800, 0, 2031620, -1073741800, 0, 2031621, -1073741800, 0, 2031622, -1073741800, 0, 2031623, -1073741793, 0, 2031624, -1073741808, 0, 2031625, -1073741800, 0, 2031626, -1073741800, 0, 2031627, -1073741810, 0, 2031628, 40, 0, 2031629, -1073741792, 0, 2031630, -1073741807, 0, 2031631, 40, 0, 2031632, -1073741818, 0, 2031633, -1073741800, 0, 2031634, -1073741800, 0, 2031635, -1073741793, 0, 2031636, -1073741808, 0, 2031637, -1073741800, 0, 2031638, -1073741800, 0, 2031639, -1073741800, 0, 2031640, -1073741800, 0, 2031641, -1073741810, 0, 2031642, 40, 0, 2031643, -1073741814, 0, 2097152, -1073741814, 0, 2097153, 40, 0, 2097154, -1073741819, 0, 2097155, -1073741798, 0, 2097156, -1073741798, 0, 2097157, -1073741798, 0, 2097158, -1073741798, 0, 2097159, -1073741798, 0, 2097160, -1073741798, 0, 2097161, -1073741798, 0, 2097162, -1073741798, 0, 2097163, -1073741811, 0, 2097164, 40, 0, 2097165, -1073741819, 0, 2097166, -1073741811, 0, 2097167, 40, 0, 2097168, -1073741819, 0, 2097169, -1073741798, 0, 2097170, -1073741798, 0, 2097171, -1073741798, 0, 2097172, -1073741798, 0, 2097173, -1073741798, 0, 2097174, -1073741798, 0, 2097175, -1073741798, 0, 2097176, -1073741798, 0, 2097177, -1073741811, 0, 2097178, 40, 0, 2097179, -1073741814, 0, 2162688, -1073741814, 0, 2162689, 40, 0, 2162690, 40, 0, 2162691, 40, 0, 2162692, 40, 0, 2162693, 40, 0, 2162694, 40, 0, 2162695, 40, 0, 2162696, 40, 0, 2162697, 40, 0, 2162698, 40, 0, 2162699, 40, 0, 2162700, 40, 0, 2162701, 40, 0, 2162702, 40, 0, 2162703, 40, 0, 2162704, 40, 0, 2162705, 40, 0, 2162706, 40, 0, 2162707, 40, 0, 2162708, 40, 0, 2162709, 40, 0, 2162710, 40, 0, 2162711, 40, 0, 2162712, 40, 0, 2162713, 40, 0, 2162714, 40, 0, 2162715, -1073741814, 0, 2228224, -1073741824, 0, 2228225, -1073741822, 0, 2228226, -1073741822, 0, 2228227, -1073741822, 0, 2228228, -1073741822, 0, 2228229, -1073741822, 0, 2228230, -1073741822, 0, 2228231, -1073741822, 0, 2228232, -1073741822, 0, 2228233, -1073741822, 0, 2228234, -1073741822, 0, 2228235, -1073741822, 0, 2228236, -1073741822, 0, 2228237, -1073741822, 0, 2228238, -1073741822, 0, 2228239, -1073741822, 0, 2228240, -1073741822, 0, 2228241, -1073741822, 0, 2228242, -1073741822, 0, 2228243, -1073741822, 0, 2228244, -1073741822, 0, 2228245, -1073741822, 0, 2228246, -1073741822, 0, 2228247, -1073741822, 0, 2228248, -1073741822, 0, 2228249, -1073741822, 0, 2228250, -1073741822, 0, 2228251, -1073741816, 0 )
+
+[node name="Points" type="Node2D" parent="."]
+
+[node name="Points" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 44 )
+
+[node name="Points2" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 20, 44 )
+
+[node name="Points3" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 28, 44 )
+
+[node name="Points4" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 36, 44 )
+
+[node name="Points5" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 44, 44 )
+
+[node name="Points6" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 44 )
+
+[node name="Points7" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 60, 44 )
+
+[node name="Points8" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 68, 44 )
+
+[node name="Points9" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 52 )
+
+[node name="Points11" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 68 )
+
+[node name="Points12" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 76 )
+
+[node name="Points13" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 20, 76 )
+
+[node name="Points14" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 28, 76 )
+
+[node name="Points15" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 36, 76 )
+
+[node name="Points16" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 44, 76 )
+
+[node name="Points17" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 52 )
+
+[node name="Points18" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 60 )
+
+[node name="Points19" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 68 )
+
+[node name="Points20" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 76 )
+
+[node name="Points21" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 60, 76 )
+
+[node name="Points22" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 68, 76 )
+
+[node name="Points23" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 76, 44 )
+
+[node name="Points24" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 76, 76 )
+
+[node name="Points25" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 84, 44 )
+
+[node name="Points26" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 92, 44 )
+
+[node name="Points27" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 44 )
+
+[node name="Points28" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 52 )
+
+[node name="Points29" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 60 )
+
+[node name="Points30" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 68 )
+
+[node name="Points31" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 84, 76 )
+
+[node name="Points32" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 92, 76 )
+
+[node name="Points33" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 76 )
+
+[node name="Points34" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 108, 76 )
+
+[node name="Points35" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 116, 76 )
+
+[node name="Points36" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 76 )
+
+[node name="Points37" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 68 )
+
+[node name="Points38" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 60 )
+
+[node name="Points39" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 52 )
+
+[node name="Points40" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 44 )
+
+[node name="Points41" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 132, 44 )
+
+[node name="Points42" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 140, 44 )
+
+[node name="Points43" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 148, 44 )
+
+[node name="Points44" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 156, 44 )
+
+[node name="Points45" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 164, 44 )
+
+[node name="Points46" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 44 )
+
+[node name="Points47" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 52 )
+
+[node name="Points48" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 60 )
+
+[node name="Points49" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 132, 76 )
+
+[node name="Points50" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 140, 76 )
+
+[node name="Points51" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 148, 76 )
+
+[node name="Points52" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 156, 76 )
+
+[node name="Points53" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 164, 76 )
+
+[node name="Points54" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 68 )
+
+[node name="Points55" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 76 )
+
+[node name="Points56" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 180, 76 )
+
+[node name="Points57" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 188, 76 )
+
+[node name="Points58" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 196, 76 )
+
+[node name="Points59" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 180, 44 )
+
+[node name="Points60" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 188, 44 )
+
+[node name="Points61" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 196, 44 )
+
+[node name="Points62" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 204, 44 )
+
+[node name="Points63" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 44 )
+
+[node name="Points64" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 52 )
+
+[node name="Points66" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 68 )
+
+[node name="Points67" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 76 )
+
+[node name="Points68" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 204, 76 )
+
+[node name="Points69" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 84 )
+
+[node name="Points70" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 92 )
+
+[node name="Points71" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 84 )
+
+[node name="Points72" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 92 )
+
+[node name="Points73" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 100 )
+
+[node name="Points74" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 204, 100 )
+
+[node name="Points75" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 196, 100 )
+
+[node name="Points76" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 188, 100 )
+
+[node name="Points77" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 180, 100 )
+
+[node name="Points78" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 100 )
+
+[node name="Points79" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 76, 84 )
+
+[node name="Points80" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 84 )
+
+[node name="Points81" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 92 )
+
+[node name="Points82" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 100 )
+
+[node name="Points83" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 76, 92 )
+
+[node name="Points84" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 76, 100 )
+
+[node name="Points85" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 44, 100 )
+
+[node name="Points86" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 36, 100 )
+
+[node name="Points87" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 28, 100 )
+
+[node name="Points88" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 20, 100 )
+
+[node name="Points89" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 84 )
+
+[node name="Points90" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 92 )
+
+[node name="Points91" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 100 )
+
+[node name="Points92" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 84, 100 )
+
+[node name="Points93" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 92, 100 )
+
+[node name="Points94" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 100 )
+
+[node name="Points95" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 100 )
+
+[node name="Points96" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 132, 100 )
+
+[node name="Points97" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 140, 100 )
+
+[node name="Points98" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 148, 100 )
+
+[node name="Points99" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 148, 92 )
+
+[node name="Points100" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 148, 84 )
+
+[node name="Points101" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 108 )
+
+[node name="Points102" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 108 )
+
+[node name="Points103" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 116 )
+
+[node name="Points104" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 116 )
+
+[node name="Points105" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 108 )
+
+[node name="Points106" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 116 )
+
+[node name="Points107" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 124 )
+
+[node name="Points108" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 108 )
+
+[node name="Points109" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 116 )
+
+[node name="Points110" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 124 )
+
+[node name="Points111" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 132 )
+
+[node name="Points112" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 132 )
+
+[node name="Points113" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 140 )
+
+[node name="Points114" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 140 )
+
+[node name="Points115" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 148 )
+
+[node name="Points116" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 148 )
+
+[node name="Points117" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 156 )
+
+[node name="Points118" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 156 )
+
+[node name="Points119" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 164 )
+
+[node name="Points120" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 164 )
+
+[node name="Points121" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 172 )
+
+[node name="Points122" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 172 )
+
+[node name="Points123" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 180 )
+
+[node name="Points124" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 180 )
+
+[node name="Points125" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 188 )
+
+[node name="Points126" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 188 )
+
+[node name="Points127" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 4, 148 )
+
+[node name="Points128" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 148 )
+
+[node name="Points129" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 20, 148 )
+
+[node name="Points130" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 28, 148 )
+
+[node name="Points131" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 36, 148 )
+
+[node name="Points132" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 44, 148 )
+
+[node name="Points133" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 180, 148 )
+
+[node name="Points134" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 188, 148 )
+
+[node name="Points135" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 196, 148 )
+
+[node name="Points136" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 204, 148 )
+
+[node name="Points137" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 148 )
+
+[node name="Points138" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 220, 148 )
+
+[node name="Points139" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 196 )
+
+[node name="Points140" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 196 )
+
+[node name="Points141" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 60, 196 )
+
+[node name="Points142" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 164, 196 )
+
+[node name="Points143" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 68, 196 )
+
+[node name="Points144" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 156, 196 )
+
+[node name="Points145" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 76, 196 )
+
+[node name="Points146" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 84, 196 )
+
+[node name="Points147" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 148, 196 )
+
+[node name="Points148" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 92, 196 )
+
+[node name="Points149" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 196 )
+
+[node name="Points150" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 140, 196 )
+
+[node name="Points151" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 132, 196 )
+
+[node name="Points152" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 196 )
+
+[node name="Points153" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 44, 196 )
+
+[node name="Points154" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 180, 196 )
+
+[node name="Points155" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 36, 196 )
+
+[node name="Points156" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 188, 196 )
+
+[node name="Points157" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 28, 196 )
+
+[node name="Points158" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 196, 196 )
+
+[node name="Points159" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 20, 196 )
+
+[node name="Points160" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 204, 196 )
+
+[node name="Points161" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 196 )
+
+[node name="Points162" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 204 )
+
+[node name="Points163" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 212 )
+
+[node name="Points165" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 204, 220 )
+
+[node name="Points166" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 196, 220 )
+
+[node name="Points167" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 204 )
+
+[node name="Points168" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 212 )
+
+[node name="Points169" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 196 )
+
+[node name="Points170" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 204 )
+
+[node name="Points171" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 204 )
+
+[node name="Points172" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 212 )
+
+[node name="Points173" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 212 )
+
+[node name="Points174" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 204 )
+
+[node name="Points175" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 204 )
+
+[node name="Points176" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 212 )
+
+[node name="Points177" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 212 )
+
+[node name="Points179" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 20, 220 )
+
+[node name="Points180" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 220 )
+
+[node name="Points181" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 220 )
+
+[node name="Points182" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 220 )
+
+[node name="Points183" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 220 )
+
+[node name="Points184" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 60, 220 )
+
+[node name="Points185" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 68, 220 )
+
+[node name="Points186" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 164, 220 )
+
+[node name="Points187" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 76, 220 )
+
+[node name="Points188" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 156, 220 )
+
+[node name="Points189" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 84, 220 )
+
+[node name="Points190" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 92, 220 )
+
+[node name="Points191" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 148, 220 )
+
+[node name="Points192" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 116, 220 )
+
+[node name="Points193" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 140, 220 )
+
+[node name="Points194" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 132, 220 )
+
+[node name="Points195" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 28, 220 )
+
+[node name="Points196" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 28, 228 )
+
+[node name="Points197" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 228 )
+
+[node name="Points198" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 76, 228 )
+
+[node name="Points199" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 28, 236 )
+
+[node name="Points200" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 236 )
+
+[node name="Points201" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 76, 236 )
+
+[node name="Points202" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 148, 228 )
+
+[node name="Points203" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 148, 236 )
+
+[node name="Points204" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 228 )
+
+[node name="Points205" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 236 )
+
+[node name="Points206" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 196, 228 )
+
+[node name="Points207" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 196, 236 )
+
+[node name="Points208" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 244 )
+
+[node name="Points209" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 20, 244 )
+
+[node name="Points210" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 28, 244 )
+
+[node name="Points211" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 36, 244 )
+
+[node name="Points212" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 44, 244 )
+
+[node name="Points213" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 244 )
+
+[node name="Points214" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 76, 244 )
+
+[node name="Points215" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 84, 244 )
+
+[node name="Points216" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 92, 244 )
+
+[node name="Points217" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 244 )
+
+[node name="Points218" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 244 )
+
+[node name="Points219" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 132, 244 )
+
+[node name="Points220" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 140, 244 )
+
+[node name="Points221" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 148, 244 )
+
+[node name="Points222" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 244 )
+
+[node name="Points223" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 180, 244 )
+
+[node name="Points224" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 188, 244 )
+
+[node name="Points225" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 196, 244 )
+
+[node name="Points226" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 204, 244 )
+
+[node name="Points227" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 244 )
+
+[node name="Points228" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 252 )
+
+[node name="Points229" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 252 )
+
+[node name="Points230" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 252 )
+
+[node name="Points231" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 252 )
+
+[node name="Points232" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 260 )
+
+[node name="Points233" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 260 )
+
+[node name="Points234" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 260 )
+
+[node name="Points235" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 260 )
+
+[node name="Points236" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 12, 268 )
+
+[node name="Points237" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 20, 268 )
+
+[node name="Points238" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 28, 268 )
+
+[node name="Points239" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 36, 268 )
+
+[node name="Points240" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 44, 268 )
+
+[node name="Points241" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 52, 268 )
+
+[node name="Points242" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 60, 268 )
+
+[node name="Points243" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 68, 268 )
+
+[node name="Points244" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 76, 268 )
+
+[node name="Points245" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 84, 268 )
+
+[node name="Points246" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 92, 268 )
+
+[node name="Points247" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 100, 268 )
+
+[node name="Points248" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 108, 268 )
+
+[node name="Points249" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 116, 268 )
+
+[node name="Points250" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 124, 268 )
+
+[node name="Points251" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 132, 268 )
+
+[node name="Points252" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 140, 268 )
+
+[node name="Points253" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 148, 268 )
+
+[node name="Points254" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 156, 268 )
+
+[node name="Points255" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 164, 268 )
+
+[node name="Points256" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 172, 268 )
+
+[node name="Points257" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 180, 268 )
+
+[node name="Points258" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 188, 268 )
+
+[node name="Points259" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 196, 268 )
+
+[node name="Points260" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 204, 268 )
+
+[node name="Points261" parent="Points" instance=ExtResource( 2 )]
+position = Vector2( 212, 268 )
+
+[node name="Power_pill" parent="Points" instance=ExtResource( 5 )]
+position = Vector2( 212, 220 )
+scale = Vector2( 0.9, 0.9 )
+
+[node name="Power_pill2" parent="Points" instance=ExtResource( 5 )]
+position = Vector2( 12, 220 )
+scale = Vector2( 0.9, 0.9 )
+
+[node name="Power_pill3" parent="Points" instance=ExtResource( 5 )]
+position = Vector2( 12, 60 )
+scale = Vector2( 0.9, 0.9 )
+
+[node name="Power_pill4" parent="Points" instance=ExtResource( 5 )]
+position = Vector2( 212, 60 )
+scale = Vector2( 0.9, 0.9 )
+
+[node name="Portal" parent="." instance=ExtResource( 3 )]
+position = Vector2( -10, 147 )
+
+[node name="Portal2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 234, 147 )
+
+[node name="ambient" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="omae" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[connection signal="point_beated" from="Points/Points" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points2" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points3" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points4" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points5" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points6" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points7" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points8" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points9" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points11" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points12" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points13" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points14" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points15" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points16" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points17" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points18" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points19" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points20" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points21" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points22" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points23" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points24" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points25" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points26" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points27" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points28" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points29" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points30" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points31" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points32" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points33" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points34" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points35" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points36" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points37" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points38" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points39" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points40" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points41" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points42" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points43" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points44" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points45" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points46" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points47" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points48" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points49" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points50" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points51" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points52" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points53" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points54" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points55" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points56" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points57" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points58" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points59" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points60" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points61" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points62" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points63" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points64" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points66" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points67" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points68" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points69" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points70" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points71" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points72" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points73" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points74" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points75" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points76" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points77" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points78" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points79" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points80" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points81" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points82" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points83" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points84" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points85" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points86" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points87" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points88" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points89" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points90" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points91" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points92" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points93" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points94" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points95" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points96" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points97" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points98" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points99" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points100" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points101" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points102" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points103" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points104" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points105" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points106" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points107" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points108" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points109" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points110" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points111" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points112" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points113" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points114" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points115" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points116" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points117" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points118" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points119" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points120" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points121" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points122" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points123" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points124" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points125" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points126" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points127" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points128" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points129" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points130" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points131" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points132" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points133" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points134" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points135" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points136" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points137" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points138" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points139" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points140" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points141" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points142" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points143" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points144" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points145" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points146" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points147" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points148" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points149" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points150" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points151" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points152" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points153" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points154" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points155" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points156" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points157" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points158" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points159" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points160" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points161" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points162" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points163" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points165" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points166" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points167" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points168" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points169" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points170" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points171" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points172" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points173" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points174" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points175" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points176" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points177" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points179" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points180" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points181" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points182" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points183" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points184" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points185" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points186" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points187" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points188" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points189" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points190" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points191" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points192" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points193" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points194" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points195" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points196" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points197" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points198" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points199" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points200" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points201" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points202" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points203" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points204" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points205" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points206" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points207" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points208" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points209" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points210" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points211" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points212" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points213" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points214" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points215" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points216" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points217" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points218" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points219" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points220" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points221" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points222" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points223" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points224" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points225" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points226" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points227" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points228" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points229" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points230" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points231" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points232" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points233" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points234" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points235" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points236" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points237" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points238" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points239" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points240" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points241" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points242" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points243" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points244" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points245" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points246" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points247" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points248" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points249" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points250" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points251" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points252" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points253" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points254" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points255" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points256" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points257" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points258" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points259" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points260" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Points261" to="." method="_on_Points_point_beated"]
+[connection signal="point_beated" from="Points/Power_pill" to="." method="_on_Power_pill_point_beated"]
+[connection signal="point_beated" from="Points/Power_pill2" to="." method="_on_Power_pill_point_beated"]
+[connection signal="point_beated" from="Points/Power_pill3" to="." method="_on_Power_pill_point_beated"]
+[connection signal="point_beated" from="Points/Power_pill4" to="." method="_on_Power_pill_point_beated"]

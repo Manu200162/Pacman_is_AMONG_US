@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nani.mp3-f9ffc84dc619786780e143da4ff2fe16.mp3str"
+
+[deps]
+
+source_file="res://assets/music/nani.mp3"
+dest_files=[ "res://.import/nani.mp3-f9ffc84dc619786780e143da4ff2fe16.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

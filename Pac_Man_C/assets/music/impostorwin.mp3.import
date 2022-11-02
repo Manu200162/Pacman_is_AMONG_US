@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/impostorwin.mp3-b3c45a05a16b68d3af6744d117973a01.mp3str"
+
+[deps]
+
+source_file="res://assets/music/impostorwin.mp3"
+dest_files=[ "res://.import/impostorwin.mp3-b3c45a05a16b68d3af6744d117973a01.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

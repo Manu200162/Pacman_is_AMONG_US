@@ -1,0 +1,123 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://scenes/characters/pacman/pacman.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/maps/Map1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Main.gd" type="Script" id=3]
+[ext_resource path="res://scenes/characters/fantasma/Ghosts.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://scenes/Layers.gd" type="Script" id=6]
+[ext_resource path="res://assets/music/nani.mp3" type="AudioStream" id=7]
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 5 )
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=1]
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=2]
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=3]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource( 6 )
+
+[node name="Score" type="Label" parent="CanvasLayer"]
+margin_left = 57.0
+margin_top = 9.0
+margin_right = 102.0
+margin_bottom = 24.0
+custom_fonts/font = SubResource( 4 )
+text = "SCORE"
+align = 1
+valign = 1
+
+[node name="Score_count" type="Label" parent="CanvasLayer"]
+margin_left = 118.0
+margin_top = 9.0
+margin_right = 158.0
+margin_bottom = 24.0
+custom_fonts/font = SubResource( 5 )
+text = "0000"
+
+[node name="Pacman_Label" type="Label" parent="CanvasLayer"]
+margin_left = 34.0
+margin_top = 288.0
+margin_right = 196.0
+margin_bottom = 303.0
+custom_fonts/font = SubResource( 6 )
+text = "Pacman is AMONG US"
+
+[node name="Pacman" parent="." instance=ExtResource( 1 )]
+position = Vector2( 108, 221 )
+scale = Vector2( 0.22, 0.22 )
+
+[node name="Map1" parent="." instance=ExtResource( 2 )]
+
+[node name="Portal" parent="Map1" index="2"]
+position = Vector2( -5, 148 )
+
+[node name="Portal2" parent="Map1" index="3"]
+position = Vector2( 229, 148 )
+
+[node name="Ghosts" parent="." instance=ExtResource( 4 )]
+
+[node name="Green_ghost" parent="Ghosts" index="0"]
+position = Vector2( 113, 146 )
+scale = Vector2( 0.1, 0.07 )
+
+[node name="AnimationTree" parent="Ghosts/Green_ghost" index="3"]
+parameters/playback = SubResource( 1 )
+
+[node name="Orange_Ghost" parent="Ghosts" index="1"]
+position = Vector2( 100, 147 )
+scale = Vector2( 0.1, 0.07 )
+color = "Orange"
+
+[node name="AnimationTree" parent="Ghosts/Orange_Ghost" index="3"]
+parameters/playback = SubResource( 2 )
+
+[node name="Red_Ghost" parent="Ghosts" index="2"]
+position = Vector2( 124, 147 )
+scale = Vector2( 0.1, 0.07 )
+color = "Red"
+
+[node name="AnimationTree" parent="Ghosts/Red_Ghost" index="3"]
+parameters/playback = SubResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 20.0
+one_shot = true
+autostart = true
+
+[node name="nani" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[connection signal="point_beated" from="Map1" to="." method="_on_Map1_point_beated"]
+[connection signal="power_pill" from="Map1" to="." method="_on_Map1_power_pill"]
+[connection signal="ghost_ate_player" from="Ghosts/Green_ghost" to="." method="_on_Ghost_ate_player"]
+[connection signal="ghost_became_vulnerable" from="Ghosts/Green_ghost" to="." method="_on_Ghost_became_vulnerable"]
+[connection signal="ghost_restored" from="Ghosts/Green_ghost" to="." method="_on_Ghost_restored"]
+[connection signal="player_ate_ghost" from="Ghosts/Green_ghost" to="." method="_on_Player_ate_ghost"]
+[connection signal="ghost_ate_player" from="Ghosts/Orange_Ghost" to="." method="_on_Ghost_ate_player"]
+[connection signal="ghost_became_vulnerable" from="Ghosts/Orange_Ghost" to="." method="_on_Ghost_became_vulnerable"]
+[connection signal="ghost_restored" from="Ghosts/Orange_Ghost" to="." method="_on_Ghost_restored"]
+[connection signal="player_ate_ghost" from="Ghosts/Orange_Ghost" to="." method="_on_Player_ate_ghost"]
+[connection signal="ghost_ate_player" from="Ghosts/Red_Ghost" to="." method="_on_Ghost_ate_player"]
+[connection signal="ghost_became_vulnerable" from="Ghosts/Red_Ghost" to="." method="_on_Ghost_became_vulnerable"]
+[connection signal="ghost_restored" from="Ghosts/Red_Ghost" to="." method="_on_Ghost_restored"]
+[connection signal="player_ate_ghost" from="Ghosts/Red_Ghost" to="." method="_on_Player_ate_ghost"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+[editable path="Map1"]
+[editable path="Ghosts"]
+[editable path="Ghosts/Green_ghost"]
+[editable path="Ghosts/Orange_Ghost"]
+[editable path="Ghosts/Red_Ghost"]
